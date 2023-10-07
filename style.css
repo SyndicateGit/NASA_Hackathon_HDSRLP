@@ -236,6 +236,27 @@ body {
 }
 
 
+.window-options .option.one{
+  background: url(./rocket_parts/window/window-base-1.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.window-options .option.two{
+  background: url(./rocket_parts/window/window-base-2.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.window-options .option.option.three{
+  background: url(./rocket_parts/window/window-base-3.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
 /* Background animation */
 @-webkit-keyframes bgScrollingUp {
   0% {
@@ -309,3 +330,10 @@ body {
 
 
 }
+
+.rocket-head{
+  background-color: #0095CF;
+  width: 50px;
+  height: 50px;
+}
+
