@@ -329,9 +329,11 @@ function hexToRgb(hex) {
 
 // this is the function you call
 
-function getCSSString(r, g, b) {
+function getColorFilter(r, g, b) {
     let color = new Color(r, g, b);
     let solver = new Solver(color);
 
     return solver.solve().filter;
 }
+
+export default getColorFilter
