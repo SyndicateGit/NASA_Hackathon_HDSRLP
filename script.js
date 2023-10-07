@@ -16,12 +16,13 @@ function setFolderActive(e){ /** Adds class active to active folder class, set d
     folder.classList.remove("active")
   })
   e.target.classList.add("active")
+  displayActiveOption();
 }
 
-function displayActiveFolder(e){
-  const folders = document.querySelectorAll(".folder");
-  folders.forEach((folder) =>{
-    folder.style.display = "none"
-  })
-  e.target.style.display = "flex"
+function displayActiveOption(){
+  const activeFolder = document.querySelectorAll(".folder.active")
+  console.log(activeFolder[0].classList.contains("head-folder"))
+  
 }
+
+/**Feature: set active option active */
