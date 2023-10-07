@@ -26,15 +26,28 @@ body{
 /*Rocket Section*/
 .rocket-section{
   background: url(./images/space.jpeg);
-  height: 66vh;
+  position: static;
+  overflow: hidden;
   background-repeat: repeat-y;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
+  flex: 2;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translatey(-3840px); /* The image width */
+  }
 }
 
 .selection-section{
   background-color: var(--orange);
-  height: 33vh;
+  flex: 1;
 
   padding: 10px;
 
