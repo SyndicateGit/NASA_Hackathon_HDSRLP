@@ -75,8 +75,13 @@ function setOptionActive(e){
 /** Feature: display png of active option */
 function displayRocketPart(e){
   const imgUrl = e.target.id
-  console.log(imgUrl)
   if(imgUrl.includes("head")){
     document.querySelector(".rocket-head").src = imgUrl;
-  }
+  } else if(imgUrl.includes("body")){
+    document.querySelector(".rocket-body").src = imgUrl;
+  } else if(imgUrl.includes("wing")){
+    document.querySelector(".rocket-wing").src = imgUrl;
+  } else if(imgUrl.includes("tail")){
+    document.querySelector(".rocket-tail").src = imgUrl;
+  } 
 }

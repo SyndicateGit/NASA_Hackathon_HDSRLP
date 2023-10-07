@@ -42,7 +42,9 @@ body {
   flex: 2;
 }
 
-
+.rocket-section > img{
+  background: transparent;
+}
 .selection-section {
   background-color: var(--orange);
   border-top-right-radius: 10px;
