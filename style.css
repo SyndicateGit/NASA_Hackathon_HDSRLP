@@ -47,8 +47,10 @@ body{
 
 .selection-section{
   background-color: var(--orange);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border: 10px;
-  flex: 1;
+  flex: .75;
 
   padding: 5px;
 
@@ -58,7 +60,7 @@ body{
 
 .selection-folders{
   flex: 1;
-  background-color: var(--steel-white);
+  background-color: var(--orange);
 
   display: flex;
   justify-content: space-between;
@@ -82,7 +84,7 @@ body{
 
 .active{
 background-color: #ff9f42;
-
+border: 1px solid #ff9f42;
 }
 
 .options{
@@ -94,6 +96,8 @@ background-color: #ff9f42;
   background-color: aqua;
   margin: 10px;
   padding: 80px;
+  border: 2px solid #00b3f9;
+  border-radius: 10px;
 }
 
 .head-options{
