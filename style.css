@@ -9,7 +9,7 @@
   --bgUrl: url(./images/space.jpeg);
   --bgWidth: 750px;
   --bgHeight: 500px;
-  --bgLoopEvery: 3.00s;
+  --bgLoopEvery: 2.00s;
 }
 
 body {
@@ -35,9 +35,9 @@ body {
   background: var(--bgUrl);
   position: static;
   overflow: hidden;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover;
+  /* background-repeat: repeat-y; */
+  /* background-position: center center; */
+  /* background-size: cover; */
   background-attachment: fixed;
   flex: 2;
 }
@@ -109,21 +109,22 @@ body {
   height: 100%;
 }
 
-.head-options .option.one{
+.head-options .option.one {
   background: url(./rocket_parts/head/head-draft-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
 
-.head-options .option.two{
+.head-options .option.two {
   background: url(./rocket_parts/head/head-draft-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 
 }
-.head-options .option.three{
+
+.head-options .option.three {
   background: url(./rocket_parts/head/head-draft-3.png);
   background-position: center center;
   background-size: 50%;
@@ -140,7 +141,7 @@ body {
 
 }
 
-.body-options .option.one{
+.body-options .option.one {
   background: url(./rocket_parts/body/body-base-1.png);
   background-position: center center;
   background-size: 50%;
@@ -148,14 +149,15 @@ body {
 
 }
 
-.body-options .option.two{
+.body-options .option.two {
   background: url(./rocket_parts/body/body-base-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 
 }
-.body-options .option.three{
+
+.body-options .option.three {
   background: url(./rocket_parts/body/body-base-3.png);
   background-position: center center;
   background-size: 50%;
@@ -171,14 +173,14 @@ body {
   height: 100%;
 }
 
-.wing-options .option.one{
+.wing-options .option.one {
   background: url(./rocket_parts/wings/wing-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
 
-.wing-options .option.two{
+.wing-options .option.two {
   background: url(./rocket_parts/wings/wings-base-2.png);
   background-position: center center;
   background-size: 50%;
@@ -186,7 +188,7 @@ body {
 
 }
 
-.wing-options .option.three{
+.wing-options .option.three {
   background: url(./rocket_parts/wings/wings-base-3.png);
   background-position: center center;
   background-size: 50%;
@@ -202,14 +204,14 @@ body {
   height: 100%;
 }
 
-.tail-options .option.one{
+.tail-options .option.one {
   background: url(./rocket_parts/tail/tail-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
 
-.tail-options .option.two{
+.tail-options .option.two {
   background: url(./rocket_parts/tail/tail-base-2.png);
   background-position: center center;
   background-size: 50%;
@@ -217,13 +219,14 @@ body {
 
 }
 
-.tail-options .option.three{
+.tail-options .option.three {
   background: url(./rocket_parts/tail/tail-base-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 
 }
+
 .window-options {
   display: none;
   justify-content: space-around;
@@ -327,3 +330,10 @@ body {
 
 
 }
+
+.rocket-head{
+  background-color: #0095CF;
+  width: 50px;
+  height: 50px;
+}
+
