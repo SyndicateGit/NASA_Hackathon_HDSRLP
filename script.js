@@ -21,8 +21,31 @@ function setFolderActive(e){ /** Adds class active to active folder class, set d
 
 function displayActiveOption(){
   const activeFolder = document.querySelectorAll(".folder.active")
-  console.log(activeFolder[0].classList.contains("head-folder"))
-  
+  if(activeFolder[0].classList.contains("head-folder")){
+    hideInactiveOptions();
+    document.querySelector(".head-options").style.display = "flex"
+  } else if(activeFolder[0].classList.contains("body-folder")){
+    hideInactiveOptions();
+    document.querySelector(".body-options").style.display = "flex"
+  } else if(activeFolder[0].classList.contains("wing-folder")){
+    hideInactiveOptions();
+    document.querySelector(".wing-options").style.display = "flex"
+  } else if(activeFolder[0].classList.contains("tail-folder")){
+    hideInactiveOptions();
+    document.querySelector(".tail-options").style.display = "flex"
+  } else if(activeFolder[0].classList.contains("window-folder")){
+    hideInactiveOptions();
+    document.querySelector(".window-options").style.display = "flex"
+  }
+}
+
+function hideInactiveOptions(){
+  const options = document.querySelectorAll(".options")
+  console.log(options)
+
+  options.forEach((option) =>{
+    option.style.display = "none"
+  })
 }
 
 /**Feature: set active option active */
