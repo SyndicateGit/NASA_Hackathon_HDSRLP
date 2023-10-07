@@ -75,5 +75,8 @@ function setOptionActive(e){
 /** Feature: display png of active option */
 function displayRocketPart(e){
   const imgUrl = e.target.id
-
+  console.log(imgUrl)
+  if(imgUrl.includes("head")){
+    document.querySelector(".rocket-head").src = imgUrl;
+  }
 }
