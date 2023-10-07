@@ -87,3 +87,7 @@ function displayRocketPart(e){
     document.querySelector(".rocket-window").src = imgUrl;
   }
 }
+
+(function(){/**Set default rocket img active*/
+  
+}());
