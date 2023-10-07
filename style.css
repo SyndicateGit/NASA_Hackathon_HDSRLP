@@ -21,6 +21,7 @@ body{
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: black;
 }
 
 /*Rocket Section*/
@@ -47,8 +48,10 @@ body{
 
 .selection-section{
   background-color: var(--orange);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border: 10px;
-  flex: 1;
+  flex: .75;
 
   padding: 5px;
 
@@ -58,16 +61,16 @@ body{
 
 .selection-folders{
   flex: 1;
-  background-color: var(--steel-white);
+  background-color: var(--orange);
 
   display: flex;
   justify-content: space-between;
-
 }
 
 .options-container{
   flex: 2;
   background-color: #d3dcf4;
+  
 }
 
 .folder{
@@ -82,18 +85,21 @@ body{
 
 .active{
 background-color: #ff9f42;
-
+border: 1px solid #ff9f42;
 }
 
 .options{
   flex: 1;
   display: flex;
+  
 }
 
 .option{
   background-color: aqua;
   margin: 10px;
   padding: 80px;
+  border: 2px solid #00b3f9;
+  border-radius: 10px;
 }
 
 .head-options{
@@ -110,6 +116,7 @@ background-color: #ff9f42;
   align-items: center;
   width: 100%;
   height: 100%;
+
 }
 
 .wing-options{
