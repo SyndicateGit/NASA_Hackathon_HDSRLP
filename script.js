@@ -74,5 +74,6 @@ function setOptionActive(e){
 
 /** Feature: display png of active option */
 function displayRocketPart(e){
-  console.log(e.target)
+  const imgUrl = e.target.id
+  console.log(imgUrl)
 }
