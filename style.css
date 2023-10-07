@@ -142,6 +142,29 @@ body {
   height: 100%;
 }
 
+.wing-options .option.one{
+  background: url(./rocket_parts/wings/wing-base-1.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.wing-options .option.two{
+  background: url(./rocket_parts/wings/wings-base-2.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.wing-options .option.three{
+  background: url(./rocket_parts/wings/wings-base-3.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
 .tail-options {
   display: none;
   justify-content: space-around;
