@@ -9,7 +9,7 @@
   --bgUrl: url(./images/space.jpeg);
   --bgWidth: 750px;
   --bgHeight: 500px;
-  --bgLoopEvery: 5.00s;
+  --bgLoopEvery: 3.00s;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 
 /*Rocket Section*/
 .rocket-section {
-  background: url(./images/space.jpeg);
+  background: var(--bgUrl);
   position: static;
   overflow: hidden;
   background-repeat: repeat-y;
@@ -42,16 +42,6 @@ body {
   flex: 2;
 }
 
-/* 
-@keyframes slide {
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translatey(-3840px);
-  }
-} */
 
 .selection-section {
   background-color: var(--orange);
@@ -159,7 +149,26 @@ body {
 }
 
 
+/* Background animation */
 @-webkit-keyframes bgScrollingUp {
+  0% {
+    background-position: 0px var(--bgHeight);
+  }
+}
+
+@-moz-keyframes bgScrollingUp {
+  0% {
+    background-position: 0px var(--bgHeight);
+  }
+}
+
+@-o-keyframes bgScrollingUp {
+  0% {
+    background-position: 0px var(--bgHeight);
+  }
+}
+
+@keyframes bgScrollingUp {
   0% {
     background-position: 0px var(--bgHeight);
   }
@@ -171,12 +180,45 @@ body {
   }
 }
 
-body {
+@-moz-keyframes bgScrollingDown {
+  100% {
+    background-position: 0px var(--bgHeight);
+  }
+}
 
-  background: var(--bgUrl);
- 
+@-o-keyframes bgScrollingDown {
+  100% {
+    background-position: 0px var(--bgHeight);
+  }
+}
+
+@keyframes bgScrollingDown {
+  100% {
+    background-position: 0px var(--bgHeight);
+  }
+}
+
+
+
+
+.rocket-section {
+
+
+  /* background animation
+  it calls webkit in your browser to do the animation 
+  call bgScrollingUp / Down for different directions*/
   -webkit-animation: bgScrollingDown var(--bgLoopEvery) infinite;
- 
+  /* Safari 4+ */
+  -moz-animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* Fx 5+ */
+  -o-animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* Opera 12+ */
+  animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* IE 10+ */
   -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+
 
 }
