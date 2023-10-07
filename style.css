@@ -47,9 +47,10 @@ body{
 
 .selection-section{
   background-color: var(--orange);
+  border: 10px;
   flex: 1;
 
-  padding: 10px;
+  padding: 5px;
 
   display: flex;
   flex-direction: column;
@@ -72,9 +73,16 @@ body{
 .folder{
   flex: 1;
   background-color: bisque;
-  border: 1px solid red;
+  border: 1px solid #ffb166;
   padding-top: 50px;
   padding-bottom: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.active{
+background-color: #ff9f42;
+
 }
 
 .options{

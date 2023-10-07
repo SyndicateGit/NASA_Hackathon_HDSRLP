@@ -6,3 +6,6 @@ We're all students from the University of Windsor doing our first hackathon!
 
 We're planning on making a kids design your own rocket web game. 
 
+Information
+Desktop size - 1025 - 1200px
+mobile size - 320 - 480px
