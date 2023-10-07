@@ -26,10 +26,54 @@ body{
 /*Rocket Section*/
 .rocket-section{
   background-color: var(--dark-blue);
-  flex: 1;
+  flex: 2;
 }
 
 .selection-section{
   background-color: var(--orange);
   flex: 1;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-folders{
+  flex: 1;
+  background-color: var(--steel-white);
+
+  display: flex;
+  justify-content: space-between;
+
+
+
+}
+
+.options-container{
+  flex: 2;
+  background-color: #d3dcf4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.folder{
+  flex: 1;
+  background-color: bisque;
+  border: 1px solid red;
+}
+
+.options{
+  flex: 1;
+  display: flex;
+}
+
+.option{
+  flex: 1;
+  background-color: aqua;
+}
+
+.head-options{
+
 }
