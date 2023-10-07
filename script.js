@@ -83,5 +83,7 @@ function displayRocketPart(e){
     document.querySelector(".rocket-wing").src = imgUrl;
   } else if(imgUrl.includes("tail")){
     document.querySelector(".rocket-tail").src = imgUrl;
-  } 
+  } else if(imgUrl.includes("window")){
+    document.querySelector(".rocket-window").src = imgUrl;
+  }
 }
