@@ -14,10 +14,14 @@ function setFolderActive(e){ /** Adds class active to active folder class, set d
   const folders = document.querySelectorAll(".folder");
   folders.forEach((folder) =>{
     folder.classList.remove("active")
-    folder.style.display = "none"
   })
   e.target.classList.add("active")
-  e.target.style.display = "flex"
 }
 
-
+function displayActiveFolder(e){
+  const folders = document.querySelectorAll(".folder");
+  folders.forEach((folder) =>{
+    folder.style.display = "none"
+  })
+  e.target.style.display = "flex"
+}
