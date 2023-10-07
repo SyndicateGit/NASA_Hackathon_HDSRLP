@@ -336,4 +336,4 @@ function getColorFilter(r, g, b) {
     return solver.solve().filter;
 }
 
-export default getColorFilter
+export {getColorFilter};
