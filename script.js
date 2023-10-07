@@ -59,6 +59,7 @@ function hideInactiveOptions(){
   options.forEach((option) => {
     option.addEventListener("click", function(e){
       setOptionActive(e)
+      displayRocketPart(e)
     })
   })
 }());
@@ -69,4 +70,10 @@ function setOptionActive(e){
     option.classList.remove("active")
   })
   e.target.classList.add("active")
+}
+
+/** Feature: display png of active option */
+function displayRocketPart(e){
+  const imgUrl = e.target.id
+  console.log(imgUrl)
 }
