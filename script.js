@@ -19,33 +19,54 @@ function setFolderActive(e){ /** Adds class active to active folder class, set d
   displayActiveOption();
 }
 
-function displayActiveOption(){
+function displayActiveOption(){ /** Active options set display: flex and set all other options to display: none */
   const activeFolder = document.querySelectorAll(".folder.active")
   if(activeFolder[0].classList.contains("head-folder")){
     hideInactiveOptions();
     document.querySelector(".head-options").style.display = "flex"
+    document.querySelector(".head-options").classList.add("active")
   } else if(activeFolder[0].classList.contains("body-folder")){
     hideInactiveOptions();
     document.querySelector(".body-options").style.display = "flex"
+    document.querySelector(".body-options").classList.add("active")
   } else if(activeFolder[0].classList.contains("wing-folder")){
     hideInactiveOptions();
     document.querySelector(".wing-options").style.display = "flex"
+    document.querySelector(".wing-options").classList.add("active")
   } else if(activeFolder[0].classList.contains("tail-folder")){
     hideInactiveOptions();
     document.querySelector(".tail-options").style.display = "flex"
+    document.querySelector(".tail-options").classList.add("active")
   } else if(activeFolder[0].classList.contains("window-folder")){
     hideInactiveOptions();
     document.querySelector(".window-options").style.display = "flex"
+    document.querySelector(".window-options").classList.add("active")
   }
 }
 
 function hideInactiveOptions(){
   const options = document.querySelectorAll(".options")
-  console.log(options)
 
   options.forEach((option) =>{
     option.style.display = "none"
+    option.classList.remove("active")
   })
 }
 
-/**Feature: set active option active */
+
+(function(){/**Feature: set active option active */
+  const options = document.querySelectorAll(".option");
+  options.forEach((option) => {
+    option.addEventListener("click", function(e){
+      setOptionActive(e)
+    })
+  })
+}());
+
+function setOptionActive(e){
+  const options = document.querySelectorAll(".option");
+  options.forEach((option) => {
+    option.classList.remove("active")
+  })
+  e.target.classList.add("active")
+}
