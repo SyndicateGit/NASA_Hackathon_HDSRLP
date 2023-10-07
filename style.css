@@ -119,6 +119,28 @@ body {
   height: 100%;
 }
 
+.head-options .option.one{
+  background: url(./rocket_parts/head/head-draft-1.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.head-options .option.two{
+  background: url(./rocket_parts/head/head-draft-2.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+.head-options .option.three{
+  background: url(./rocket_parts/head/head-draft-3.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
 .body-options {
   display: none;
   justify-content: space-around;
@@ -128,12 +150,27 @@ body {
 
 }
 
-.wing-options {
-  display: none;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.body-options .option.one{
+  background: url(./rocket_parts/body/body-base-1.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.body-options .option.two{
+  background: url(./rocket_parts/body/body-base-2.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+.body-options .option.three{
+  background: url(./rocket_parts/body/body-base-3.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
 }
 
 .wing-options {
@@ -175,6 +212,28 @@ body {
   height: 100%;
 }
 
+.tail-options .option.one{
+  background: url(./rocket_parts/tail/tail-base-1.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.tail-options .option.two{
+  background: url(./rocket_parts/tail/tail-base-2.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.tail-options .option.three{
+  background: url(./rocket_parts/tail/tail-base-3.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
 .window-options {
   display: none;
   justify-content: space-around;
