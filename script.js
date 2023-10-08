@@ -80,11 +80,13 @@ function displayRocketPart(e){
   } else if(imgUrl.includes("body")){
     document.querySelector(".rocket-body").src = imgUrl;
   } else if(imgUrl.includes("wing")){
-    document.querySelector(".rocket-wing").src = imgUrl;
+    document.querySelector(".rocket-wing.left").src = imgUrl;
+    document.querySelector(".rocket-wing.right").src = imgUrl;
   } else if(imgUrl.includes("tail")){
     document.querySelector(".rocket-tail").src = imgUrl;
   } else if(imgUrl.includes("window")){
     document.querySelector(".rocket-window").src = imgUrl;
+  
   }
 }
 
