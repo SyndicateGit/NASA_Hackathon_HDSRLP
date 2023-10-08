@@ -148,6 +148,7 @@ function groundOffScreen(){
   const ground = document.querySelector(".earth")
   ground.classList.add("fade")
 }
+
 (function(){
   const alien = document.querySelector(".alien")
   const alienWindow = document.querySelector(".alien-window")
