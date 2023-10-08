@@ -305,6 +305,26 @@ img.rocket-window{
   background-repeat: no-repeat;
 }
 
+
+.avatar .astronaut{
+  position: relative;  
+  height: 100px;
+  right: 16rem;
+  
+}
+
+.avatar .alien{
+  position: relative; 
+  height: 100px;
+  right: 15rem;
+}
+
+.avatar{
+  position: absolute;  
+  margin-top: 17rem;
+}
+
+
 /* Background animation */
 @-webkit-keyframes bgScrollingUp {
   0% {
@@ -411,7 +431,7 @@ img.rocket-window{
   position: relative;
   width: 12rem;
   height: 7rem;
-  bottom: 7rem
+  bottom: 7rem;
 }
 .rocket-window{
   position: relative;
