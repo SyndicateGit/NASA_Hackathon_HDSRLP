@@ -491,7 +491,7 @@ body {
 }
 
 .launch {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   width: 120px;
   height: 120px;
@@ -504,7 +504,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, rgba(250, 44, 113, 0.4) 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, rgba(250, 44, 113, 0.7) 0 -7px 20px inset;
-  margin-left: -59px;
+
   z-index: 0;
   bottom: 5rem;
 }
