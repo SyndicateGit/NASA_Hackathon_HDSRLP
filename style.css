@@ -44,7 +44,7 @@ body {
   min-height: 66vh;
 }
 
-.rocket-section > div > img{
+img{
   background: transparent;
   filter: invert(45%) sepia(100%) saturate(1329%) hue-rotate(2deg) brightness(103%) contrast(102%);
 
@@ -381,18 +381,25 @@ body {
 }
 
 .rocket-wing.left{
-  position: absolute;
+  position: relative;
   width: 10rem;
   height: 10rem;
-  left: 16.5rem;
 
+  margin-right: -1.5rem;
 }
 
 .rocket-wing.right{
-  position: absolute;
+  position: relative;
   width: 10rem;
   height: 10rem;
-  right: 16.5rem;
+
+  margin-left: -1.5rem;
 
   transform: scaleX(-1);
+}
+
+.rocket-mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
