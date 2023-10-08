@@ -581,5 +581,10 @@ body {
   position: absolute;
   bottom: -5rem;
   height: 15rem;
+  transition: 3s ease-in-out;
+}
 
+.earth.fade{
+  opacity: 0%;
+  transform: translate(0px, 100rem)
 }

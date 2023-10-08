@@ -140,9 +140,14 @@ function delay(time) {
     background.classList.add("active");
     alien.style = "opacity: 0%;"
     astronaut.style = "opacity: 0%;"
+    groundOffScreen()
   })
 }());
 
+function groundOffScreen(){
+  const ground = document.querySelector(".earth")
+  ground.classList.add("fade")
+}
 (function(){
   const alien = document.querySelector(".alien")
   const alienWindow = document.querySelector(".alien-window")
