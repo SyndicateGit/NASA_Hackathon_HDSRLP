@@ -61,17 +61,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   align-self: center;
 }
 
 
-img{
+img.rocket{
   background: transparent;
   filter: invert(45%) sepia(100%) saturate(1329%) hue-rotate(2deg) brightness(103%) contrast(102%);
 
   z-index: 1;
 }
+
+img.rocket-window{
+  z-index: 2;
+}
+
 .selection-section {
   background-color: var(--orange);
   border-top-right-radius: 10px;
