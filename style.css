@@ -506,7 +506,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, rgba(250, 44, 113, 0.4) 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, rgba(250, 44, 113, 0.7) 0 -7px 20px inset;
 
   z-index: 0;
-  bottom: 5rem;
+  bottom: 4rem;
 }
 
 .launch:hover {

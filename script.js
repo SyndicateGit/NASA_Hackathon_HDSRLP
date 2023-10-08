@@ -108,10 +108,21 @@ function displayRocketPart(e){
       selection.style.display = "flex"
       menuIcon.src = "./images/menu-close-icon.svg"
     }
+    toggleLaunchButtonDisplay();
   })
 }());
 
+function toggleLaunchButtonDisplay(){
+  const launch = document.querySelector(".wrap")
+
+  if(launch.style.display == "none"){
+    launch.style.display = "block"
+  } else{
+    launch.style.display = "none"
+  }
+}
+
 /**Add launch button event, add active to class of rocket-section, fade background to black over 1 second, then change bg url to space, then fade it lighter */
 (function(){
-  
+
 }());
