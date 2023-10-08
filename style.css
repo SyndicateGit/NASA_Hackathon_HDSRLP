@@ -365,6 +365,22 @@ img.rocket-window{
 }
 
 
+.astronaut-window{
+  position: relative;  
+  height: 40px;
+  z-index: 2;
+  bottom: 13.9rem;
+  right: 1.5rem;
+}
+
+.alien-window{
+  position: relative;  
+  height: 40px;
+  z-index: 2;
+  bottom: 13.9rem;
+  right: 4rem;
+}
+
 /* Background animation */
 @-webkit-keyframes bgScrollingUp {
   0% {
@@ -456,7 +472,8 @@ img.rocket-window{
   position: relative;
   height: 5rem;
   width: 5rem;
-  bottom: 12rem;
+  bottom: 12.5rem;
+  left: 2.5rem;
 }
 
 .rocket-wing.left{
