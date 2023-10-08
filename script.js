@@ -138,3 +138,10 @@ function delay(time) {
     
   })
 }());
+
+(function(){
+  const alien = document.querySelector(".alien")
+  alien.addEventListener("click", ()=>{
+    console.log(true)
+  })
+}());
