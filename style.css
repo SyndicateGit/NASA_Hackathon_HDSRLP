@@ -8,26 +8,22 @@
   --verdeoscuro: #00734a;
   --verdeclaro: #00ce30;
   --magentoso: #fc2c71;
-
   /* bg scrolling */
   --bgUrl: url(./images/space.jpeg);
   --bgWidth: 750px;
   --bgHeight: 500px;
   --bgLoopEvery: 2.00s;
 }
-
 body {
   height: 100%;
   width: 100%;
   
   overflow: scroll;
 }
-
 * {
   margin: 0px;
   padding: 0px;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -35,7 +31,6 @@ body {
   width: 100%;
   background-color: black;
 }
-
 
 /*Rocket Section*/
 .rocket-section {
@@ -49,23 +44,19 @@ body {
   flex: 2;
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: start;
   box-sizing: border-box;
-
   transition: 2s ease-in-out;
 
+
+  
   border: 1px solid var(--orange)
 }
-
 .rocket-section.fade{
   opacity: 0%;
 }
-
-
-
 .rocket-section.active{
   /* background animation
   it calls webkit in your browser to do the animation 
@@ -83,14 +74,11 @@ body {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-
 .earth{
   position: relative;
   width: 100%;
   height: 30rem;
-
 }
-
 .menu-button{
   width: 10rem;
   /*Trapezoid*/
@@ -99,68 +87,52 @@ body {
 	border-right: 2rem solid transparent;
 	height: 0;
 	width: 10rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   align-self: center;
 }
-
 .menu-icon{
   padding-top: 3rem;
   width: 3rem;
   height: auto;
 }
-
 img.rocket{
   background: transparent;
   filter: invert(45%) sepia(100%) saturate(1329%) hue-rotate(2deg) brightness(103%) contrast(102%);
-
   z-index: 1;
 }
-
 img.rocket-window{
   z-index: 2;
 }
-
 .selection-section {
   background-color: var(--orange);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border: 10px;
   flex: .75;
-
   padding: 5px;
-
   display: flex;
   flex-direction: column;
   
 }
-
 .section-section-content{
   z-index: 10;
 }
-
 .selection-folders {
   flex: 1;
   background-color: var(--orange);
-
   display: flex;
   justify-content: space-between;
-
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--orange);
 }
-
 .options-container {
   flex: 2;
   background-color: var(--light-orange);
-
 }
-
 .folder {
   flex: 1;
   background-color: bisque;
@@ -170,18 +142,14 @@ img.rocket-window{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
 .active {
   background-color: var(--light-orange);
   border: 1px solid var(--light-orange);
 }
-
 .options {
   flex: 1;
   display: flex;
-
 }
-
 .option {
   background-color: aqua;
   margin: 10px;
@@ -191,7 +159,6 @@ img.rocket-window{
   border: 3px solid #a0c2ea;
   border-radius: 10px;
 }
-
 .head-options {
   display: flex;
   justify-content: space-around;
@@ -199,63 +166,49 @@ img.rocket-window{
   width: 100%;
   height: 100%;
 }
-
 .head-options .option.one {
   background: url(./rocket_parts/head/head-draft-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 .head-options .option.two {
   background: url(./rocket_parts/head/head-draft-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .head-options .option.three {
   background: url(./rocket_parts/head/head-draft-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .body-options {
   display: none;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100%;
-
 }
-
 .body-options .option.one {
   background: url(./rocket_parts/body/body-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .body-options .option.two {
   background: url(./rocket_parts/body/body-base-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .body-options .option.three {
   background: url(./rocket_parts/body/body-base-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .wing-options {
   display: none;
   justify-content: space-around;
@@ -263,30 +216,24 @@ img.rocket-window{
   width: 100%;
   height: 100%;
 }
-
 .wing-options .option.one {
   background: url(./rocket_parts/wings/wing-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 .wing-options .option.two {
   background: url(./rocket_parts/wings/wings-base-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .wing-options .option.three {
   background: url(./rocket_parts/wings/wings-base-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .tail-options {
   display: none;
   justify-content: space-around;
@@ -294,30 +241,24 @@ img.rocket-window{
   width: 100%;
   height: 100%;
 }
-
 .tail-options .option.one {
   background: url(./rocket_parts/tail/tail-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 .tail-options .option.two {
   background: url(./rocket_parts/tail/tail-base-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .tail-options .option.three {
   background: url(./rocket_parts/tail/tail-base-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
-
 }
-
 .window-options {
   display: none;
   justify-content: space-around;
@@ -325,56 +266,45 @@ img.rocket-window{
   width: 100%;
   height: 100%;
 }
-
-
 .window-options .option.one{
   background: url(./rocket_parts/window/window-base-1.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 .window-options .option.two{
   background: url(./rocket_parts/window/window-base-2.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 .window-options .option.option.three{
   background: url(./rocket_parts/window/window-base-3.png);
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
-
 .avatar .astronaut{
   position: relative;  
-  width: 10vw;
-  z-index: 15;
-  
+  height: 100px;
+  right: 16rem;
 
+  z-index: 15;
 
 }
 
 .avatar .alien{
   position: relative; 
+  height: 100px;
+  right: 15rem;
+
   z-index: 15;
-  width: 10vw;
 }
 
 .avatar{
-  position: relative;  
-  width: 100%;
-  height: 100%;
-  margin-bottom: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;  
+  margin-top: 17rem;
 }
-
-
 .astronaut-window{
   position: relative;  
   height: 40px;
@@ -382,7 +312,6 @@ img.rocket-window{
   bottom: 13.9rem;
   right: 1.5rem;
 }
-
 .alien-window{
   position: relative;  
   height: 40px;
@@ -390,83 +319,64 @@ img.rocket-window{
   bottom: 13.9rem;
   right: 4rem;
 }
-
 /* Background animation */
 @-webkit-keyframes bgScrollingUp {
   0% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @-moz-keyframes bgScrollingUp {
   0% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @-o-keyframes bgScrollingUp {
   0% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @keyframes bgScrollingUp {
   0% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @-webkit-keyframes bgScrollingDown {
   100% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @-moz-keyframes bgScrollingDown {
   100% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @-o-keyframes bgScrollingDown {
   100% {
     background-position: 0px var(--bgHeight);
   }
 }
-
 @keyframes bgScrollingDown {
   100% {
     background-position: 0px var(--bgHeight);
   }
 }
-
-
-
-
 .rocket-parts{
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 90%;
   margin-top: 5rem;
 }
-
 .rocket-parts>img{
-
 }
-
-
-
 .rocket-head{
   position: relative;
   width: 10rem;
   height: 10rem;
 }
-
 .rocket-body{
   position: relative;
   width: 10rem;
@@ -485,49 +395,38 @@ img.rocket-window{
   bottom: 12.5rem;
   left: 2.5rem;
 }
-
 .rocket-wing.left{
   position: relative;
   width: 10rem;
   height: 10rem;
-
   margin-right: -1.5rem;
 }
-
 .rocket-wing.right{
   position: relative;
   width: 10rem;
   height: 10rem;
-
   margin-left: -1.5rem;
-
   transform: scaleX(-1);
 }
-
 .rocket-mid{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .flame{
   position: relative;
   width: 50%;
   bottom: 7.5rem;
 }
-
 /*Launch button*/
-
 *{
   margin:0;
   padding:0;
 }
-
 html {
   width: 100%;
   height: 100%;
 }
-
 body {
   width: 100%;
   height: 100%;
@@ -538,7 +437,6 @@ body {
   background-repeat: no-repeat;
   padding-top: 3em;
 }
-
 .launch {
   position: relative;
   cursor: pointer;
@@ -555,19 +453,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, rgba(250, 44, 113, 0.4) 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, rgba(250, 44, 113, 0.7) 0 -7px 20px inset;
   bottom: 4rem;
 }
-
 .launch:hover {
   background-image: radial-gradient(circle contain at center center, rgba(250, 44, 113, 0.95), rgba(250, 44, 113, 0.9) 30px, rgba(250, 44, 113, 0.9) 40px, rgba(250, 44, 113, 0.95) 65px);
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.9) 0 3px 3px inset, rgba(250, 44, 113, 0.7) 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, rgba(250, 44, 113, 0.7) 0 -7px 20px inset;
  
 }
-
 .launch:active {
   border-color: rgba(250, 44, 113, 0.1);
   background-image: radial-gradient(circle contain at center center, var(--magentoso) 15px, rgba(58, 6, 28, 0.85) 30px, rgba(58, 6, 28, 0.85) 40px, rgba(34, 3, 15, 0.75) 65px);
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(0, 0, 0, 0.8) 0 3px 3px inset, rgba(58, 6, 28, 0.7) 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.3) 0 -2px 3px inset, rgba(58, 6, 28, 0.7) 0 -7px 20px inset;
 }
-
 .launch:before {
   display: block;
   content: '';
@@ -583,22 +478,18 @@ body {
   border-radius: 80px;
   box-shadow: rgba(250, 44, 113, 0.8) 0 4px 5px inset, rgba(255, 255, 255, 0.5) 0 12px 5px inset, rgba(250, 44, 113, 0.7) 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px;
 }
-
 .alien{
   cursor: pointer;
 }
-
 .astronaut{
   cursor: pointer;
 }
-
 .earth{
   position: absolute;
   bottom: -5rem;
   height: 15rem;
   transition: 3s ease-in-out;
 }
-
 .earth.fade{
   opacity: 0%;
   transform: translate(0px, 100rem)
