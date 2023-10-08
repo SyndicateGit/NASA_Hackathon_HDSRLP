@@ -31,8 +31,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: black;
 }
 
@@ -185,7 +185,9 @@ img.rocket-window{
 .option {
   background-color: aqua;
   margin: 10px;
-  padding: 80px;
+  flex:1;
+  height: 15vh;
+  max-width: 10rem;
   border: 3px solid #a0c2ea;
   border-radius: 10px;
 }
@@ -351,6 +353,8 @@ img.rocket-window{
   position: relative;  
   height: 100px;
   right: 16rem;
+
+  z-index: 15;
   
 }
 
@@ -358,6 +362,8 @@ img.rocket-window{
   position: relative; 
   height: 100px;
   right: 15rem;
+
+  z-index: 15;
 }
 
 .avatar{
