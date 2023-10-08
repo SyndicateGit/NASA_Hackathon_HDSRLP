@@ -40,7 +40,7 @@ body {
 /*Rocket Section*/
 .rocket-section {
   background: var(--bgUrl);
-  position: static;
+  position: relative;
   overflow: hidden;
   /* background-repeat: repeat-y; */
   /* background-position: center center; */
@@ -48,6 +48,7 @@ body {
   background-attachment: fixed;
   flex: 2;
   width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -574,4 +575,11 @@ body {
 
 .astronaut{
   cursor: pointer;
+}
+
+.earth{
+  position: absolute;
+  bottom: -5rem;
+  height: 15rem;
+
 }
