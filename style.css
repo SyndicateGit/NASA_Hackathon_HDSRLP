@@ -501,6 +501,12 @@ img.rocket-window{
   justify-content: center;
 }
 
+.flame{
+  position: relative;
+  width: 50%;
+  bottom: 7.5rem;
+}
+
 /*Launch button*/
 
 *{
