@@ -135,5 +135,6 @@ function delay(time) {
 
   launch.addEventListener("click", ()=>{
     background.classList.add("active");
+    
   })
 }());

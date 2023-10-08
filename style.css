@@ -55,6 +55,8 @@ body {
   box-sizing: border-box;
 
   transition: 2s ease-in-out;
+
+  border: 1px solid var(--orange)
 }
 
 .rocket-section.fade{
@@ -81,7 +83,12 @@ body {
   animation-timing-function: linear;
 }
 
-
+.earth{
+  position: relative;
+  width: 100%;
+  height: 30 rem;
+  bottom: 25%;
+}
 
 .menu-button{
   width: 10rem;
@@ -411,6 +418,7 @@ img.rocket-window{
 
 
 .rocket-parts{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
