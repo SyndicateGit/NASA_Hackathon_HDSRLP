@@ -14,8 +14,8 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -29,7 +29,10 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+
+  overflow: scroll;
 }
+
 
 /*Rocket Section*/
 .rocket-section {
@@ -42,10 +45,14 @@ body {
   background-attachment: fixed;
   flex: 2;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-
-  min-height: 66vh;
+  justify-content: start;
+  box-sizing: border-box;
+  min-height: 60%;
+ 
+  
 }
 
 .menu-button{
@@ -63,6 +70,7 @@ body {
   align-items: center;
 
   align-self: center;
+  
 }
 
 .menu-icon{
@@ -379,7 +387,7 @@ img.rocket-window{
   justify-content: center;
 
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin-top: 5rem;
 }
 
@@ -403,14 +411,13 @@ img.rocket-window{
 .rocket-tail{
   position: relative;
   width: 12rem;
-  height: 15rem;
+  height: 7rem;
   bottom: 7rem
 }
 .rocket-window{
   position: relative;
   height: 5rem;
   width: 5rem;
-
   bottom: 12rem;
 }
 

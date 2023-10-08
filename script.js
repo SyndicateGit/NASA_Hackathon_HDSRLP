@@ -90,6 +90,19 @@ function displayRocketPart(e){
   }
 }
 
-(function(){/**Set default rocket img active*/
+(function(){ /**Menu open-close */
+  const menuButton = document.querySelector(".menu-button")
   
+  const selection = document.querySelector(".selection-section")
+
+
+  menuButton.addEventListener("click", (e)=>{
+    if(menuButton.classList.contains("open")){
+      menuButton.classList.remove("open")
+      selection.style.display = "none"
+    }
+  })
 }());
+
+
+
