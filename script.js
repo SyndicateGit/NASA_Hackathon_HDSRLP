@@ -122,7 +122,18 @@ function toggleLaunchButtonDisplay(){
   }
 }
 
+/** Idle wait function */
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+
 /**Add launch button event, add active to class of rocket-section, fade background to black over 1 second, then change bg url to space, then fade it lighter */
 (function(){
+  const launch = document.querySelector(".launch")
+  const background = document.querySelector(".rocket-section")
 
+  launch.addEventListener("click", ()=>{
+    background.classList.add("active");
+  })
 }());
