@@ -100,6 +100,9 @@ function displayRocketPart(e){
     if(menuButton.classList.contains("open")){
       menuButton.classList.remove("open")
       selection.style.display = "none"
+    } else{
+      menuButton.classList.add("open")
+      selection.style.display = "flex"
     }
   })
 }());
