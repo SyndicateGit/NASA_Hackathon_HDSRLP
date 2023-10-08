@@ -59,12 +59,17 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   align-self: center;
 }
 
+.menu-icon{
+  padding-top: 3rem;
+  width: 3rem;
+  height: auto;
+}
 
 img.rocket{
   background: transparent;
