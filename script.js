@@ -111,5 +111,7 @@ function displayRocketPart(e){
   })
 }());
 
-
-
+/**Add launch button event, add active to class of rocket-section, fade background to black over 1 second, then change bg url to space, then fade it lighter */
+(function(){
+  
+}());

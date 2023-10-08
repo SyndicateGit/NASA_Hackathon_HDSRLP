@@ -377,9 +377,7 @@ img.rocket-window{
 
 
 
-.rocket-section {
-
-
+.rocket-section.active{
   /* background animation
   it calls webkit in your browser to do the animation 
   call bgScrollingUp / Down for different directions*/
@@ -395,7 +393,6 @@ img.rocket-window{
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
-
 }
 
 
