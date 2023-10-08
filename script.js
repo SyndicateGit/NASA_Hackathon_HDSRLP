@@ -93,16 +93,20 @@ function displayRocketPart(e){
 (function(){ /**Menu open-close */
   const menuButton = document.querySelector(".menu-button")
   
+  
   const selection = document.querySelector(".selection-section")
 
+  const menuIcon = document.querySelector(".menu-icon")
 
   menuButton.addEventListener("click", (e)=>{
     if(menuButton.classList.contains("open")){
       menuButton.classList.remove("open")
       selection.style.display = "none"
+      menuIcon.src = "./images/menu-open-icon.svg"
     } else{
       menuButton.classList.add("open")
       selection.style.display = "flex"
+      menuIcon.src = "./images/menu-close-icon.svg"
     }
   })
 }());
