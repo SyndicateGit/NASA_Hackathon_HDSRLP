@@ -54,7 +54,34 @@ body {
   justify-content: start;
   box-sizing: border-box;
 
+  transition: 2s ease-in-out;
 }
+
+.rocket-section.fade{
+  opacity: 0%;
+}
+
+
+
+.rocket-section.active{
+  /* background animation
+  it calls webkit in your browser to do the animation 
+  call bgScrollingUp / Down for different directions*/
+  -webkit-animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* Safari 4+ */
+  -moz-animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* Fx 5+ */
+  -o-animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* Opera 12+ */
+  animation: bgScrollingDown var(--bgLoopEvery) infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+
 
 .menu-button{
   width: 10rem;
@@ -381,25 +408,6 @@ img.rocket-window{
 }
 
 
-
-
-.rocket-section.active{
-  /* background animation
-  it calls webkit in your browser to do the animation 
-  call bgScrollingUp / Down for different directions*/
-  -webkit-animation: bgScrollingDown var(--bgLoopEvery) infinite;
-  /* Safari 4+ */
-  -moz-animation: bgScrollingDown var(--bgLoopEvery) infinite;
-  /* Fx 5+ */
-  -o-animation: bgScrollingDown var(--bgLoopEvery) infinite;
-  /* Opera 12+ */
-  animation: bgScrollingDown var(--bgLoopEvery) infinite;
-  /* IE 10+ */
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
 
 
 .rocket-parts{
