@@ -130,18 +130,37 @@ function delay(time) {
 
 /**Add launch button event, add active to class of rocket-section, fade background to black over 1 second, then change bg url to space, then fade it lighter */
 (function(){
+  const alien = document.querySelector(".alien")
+  const astronaut = document.querySelector(".astronaut")
+
   const launch = document.querySelector(".launch")
   const background = document.querySelector(".rocket-section")
 
   launch.addEventListener("click", ()=>{
     background.classList.add("active");
-    
+    alien.style = "opacity: 0%;"
+    astronaut.style = "opacity: 0%;"
   })
 }());
 
 (function(){
   const alien = document.querySelector(".alien")
+  const alienWindow = document.querySelector(".alien-window")
+  const astronaut = document.querySelector(".astronaut")
+  const astronautWindow = document.querySelector(".astronaut-window")
+
   alien.addEventListener("click", ()=>{
-    console.log(true)
+    alienWindow.style = "opacity: 100%;"
+    astronautWindow.style = "opacity: 0%;"
+    alien.style = "opacity: 0%;"
+    astronaut.style = "opacity: 100%;"
+  })
+
+  astronaut.addEventListener("click", ()=>{
+    astronautWindow.style = "opacity: 100%;"
+    alienWindow.style = "opacity: 0%;"
+    alien.style = "opacity: 100%;"
+    astronaut.style = "opacity: 0%;"
   })
 }());
+
